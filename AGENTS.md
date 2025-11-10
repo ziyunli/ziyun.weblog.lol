@@ -2,12 +2,10 @@
 
 ## Project Structure & Module Organization
 - `weblog/` holds posts. Use `YYYY-MM-DD_HH_MM_slug.md`, keep YAML front matter with `Date`/`Tags`, then a single H1 title.
-- `pages/` stores long-lived content (example: `pages/archive.md`). Always include `Type: Page`, `Title`, and `Location` so omg.lol routes links correctly.
 - `configuration/` contains `configuration.txt` plus `template.html`; edit them in the same change whenever you introduce a new token or navigation element.
 
 ## Build, Test, and Development Commands
-- `npx markdownlint-cli2 "weblog/**/*.md" "pages/**/*.md"` — lint Markdown posts and pages before committing.
-- `npx prettier --check configuration/template.html` — ensure the template keeps tabs-based indentation and valid HTML.
+- `npx prettier ./weblog --write` — formats the contents.
 - `git push origin main` — triggers the `neatnik/weblog.lol` GitHub Action that imports content to omg.lol; push only after linting passes.
 
 ## Coding Style & Naming Conventions
