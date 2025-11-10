@@ -2,6 +2,7 @@
 
 ## Project Structure & Module Organization
 - `weblog/` holds posts. Use `YYYY-MM-DD_HH_MM_slug.md`, keep YAML front matter with `Date`/`Tags`, then a single H1 title.
+- Weblog slug generation breaks on non-English H1 text; Chinese (or other non-Latin) titles force the tool to emit `_untitled.md`, and manual renames do not stick because the filename regenerates from the H1—stick to ASCII/English titles so slugs stay stable.
 - `configuration/` contains `configuration.txt` plus `template.html`; edit them in the same change whenever you introduce a new token or navigation element.
 
 ## Build, Test, and Development Commands
