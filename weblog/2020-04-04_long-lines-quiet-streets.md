@@ -3,7 +3,7 @@ Date: 2020-04-04
 Tags: Life
 ---
 
-# A Shopping Trip during Lockdown
+# Long Lines, Quiet Streets
 
 I braved it out and went to shop for grocery today, despite COVID-19.
 
